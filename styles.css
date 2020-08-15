@@ -50,17 +50,17 @@ button:hover {
   color: black;
 }
 
-.clear-value {
+.clear {
   background-color: lightgreen;
 
   color: #fff;
 }
 
-.clear-value:hover {
+.clear:hover {
   background-color: #f17377;
 }
 
-.calculate-value {
+.calculate {
   background-color: lightgray;
   border-radius: 10%;
   color: #fff;
@@ -68,11 +68,11 @@ button:hover {
   grid-area: 2 / 4 / 6 / 5;
 }
 
-.calculate-value:hover {
+.calculate:hover {
   background-color: #4e9ed4;
 }
 
-.display-keys {
+.calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
