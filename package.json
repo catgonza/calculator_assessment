@@ -1,0 +1,27 @@
+{
+  "name": "calculator_assessment",
+  "version": "1.0.0",
+  "description": "Calculator assessment for JWD program",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catgonza/calculator_assessment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catgonza/calculator_assessment/issues"
+  },
+  "homepage": "https://github.com/catgonza/calculator_assessment#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.0"
+  }
+}

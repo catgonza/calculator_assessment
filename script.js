@@ -1,7 +1,7 @@
 // Hello, thanks for checking out my work. This is a simple calculator using JS
 // based on different tutorials and my own code/logic
 // for more info please refer to the read me file on GitHub
-
+import { performCalculation } from "./util.js";
 // declaration of variables
 const calculator = {
   outputValue: "0",
@@ -54,20 +54,6 @@ function handleOperator(nextOperator) {
   calculator.operator = nextOperator;
 }
 
-// take first number (firstValue) and second number (secondOperand)
-// use operators (/,*,+,-,=) to do the calculations
-// use toFixed to round to 3 decimals
-const performCalculation = {
-  "/": (firstValue, secondOperand) => (firstValue / secondOperand).toFixed(3),
-
-  "*": (firstValue, secondOperand) => firstValue * secondOperand,
-
-  "+": (firstValue, secondOperand) => firstValue + secondOperand,
-
-  "-": (firstValue, secondOperand) => firstValue - secondOperand,
-
-  "=": (firstValue, secondOperand) => secondOperand,
-};
 // function to reset the calculator
 function resetCalculator() {
   calculator.outputValue = "0";
@@ -77,12 +63,12 @@ function resetCalculator() {
 }
 
 // select the text area that displays the results using querySelector
-function updateDisplay() {
-  const display = document.querySelector(".output-screen");
-  display.value = calculator.outputValue;
-}
+// function updateDisplay() {
+//   const display = document.querySelector(".output-screen");
+//   display.value = calculator.outputValue;
+// }
 
-updateDisplay();
+// updateDisplay();
 
 // select the buttons from DOM using querySelector and add EventListener
 // confirm if a button was clicked and then fetch its action and values further
